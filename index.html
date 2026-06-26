@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexgen Tech - Platform Active</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white flex flex-col justify-between min-h-screen font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg shadow-lg shadow-blue-500/20">N</div>
+                <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">NEXGEN TECH</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#" class="text-blue-400">Dashboard</a>
+                <a href="#" class="hover:text-slate-200 transition">Infrastructure</a>
+                <a href="#" class="hover:text-slate-200 transition">SLA Status</a>
+            </nav>
+            <button class="bg-blue-600 hover:bg-blue-500 transition px-4 py-1.5 rounded-md text-sm font-medium shadow-md shadow-blue-600/10">
+                Contact Support
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 text-center flex-grow flex flex-col justify-center items-center">
+        <!-- Status Badge -->
+        <div class="inline-flex items-center space-x-2 bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold mb-6 border border-emerald-500/20">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Virtual Environment Active</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">
+            PaaS Environment Provisioned Successfully
+        </h1>
+        <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base md:text-lg">
+            Your Node.js environment is configured and listening. You can now securely hook up your GitHub Actions pipeline to handle zero-downtime micro-deployments.
+        </p>
+
+        <!-- Technical Metadata Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl text-left">
+            <div class="p-4 bg-slate-800/40 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Runtime Version</div>
+                <div class="text-lg font-mono font-bold text-blue-400">Node.js v20.x</div>
+            </div>
+            <div class="p-4 bg-slate-800/40 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Reverse Proxy</div>
+                <div class="text-lg font-mono font-bold text-indigo-400">Nginx / SSL</div>
+            </div>
+            <div class="p-4 bg-slate-800/40 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Database State</div>
+                <div class="text-lg font-mono font-bold text-emerald-400">Mongo Isolated</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 bg-slate-950/20">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
+            &copy; 2026 Data Center Platform Services. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
